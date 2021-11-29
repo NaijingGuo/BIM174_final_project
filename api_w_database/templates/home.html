@@ -1,0 +1,28 @@
+{% extends "layout.html" %} {% block content %}
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Temprature</th>
+      <th>Humidity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Time">current</td>
+      <td data-label="Temprature">{{ data.temprature }}</td>
+      <td data-label="Humidity">{{ data.humidity }}</td>
+    </tr>
+    <!-- <tr>
+        <td data-label="Name">Jill</td>
+        <td data-label="Age">26</td>
+        <td data-label="Job">Engineer</td>
+      </tr>
+      <tr>
+        <td data-label="Name">Elyse</td>
+        <td data-label="Age">24</td>
+        <td data-label="Job">Designer</td>
+      </tr> -->
+  </tbody>
+</table>
+{%endblock %}
